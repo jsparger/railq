@@ -1,7 +1,7 @@
 railq
 =====
 
-Generate a queue for a rails model.
+Generate a database queue for a rails model!
 
 If you have a model Dog, create a DogQueue model like this:
 
