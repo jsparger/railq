@@ -5,14 +5,7 @@ Gem::Specification.new do |s|
   s.summary = "Generates queues for models"
   s.homepage = "http://github.com/jsparger/railq"
   s.description = "Generates queues for models"
-  s.has_doc = false
   s.authors = ["John Sparger"]
-  s.files = [
-    "lib/rail_q/rail_q.rb",
-    "lib/generators/rail_q/queue_generator.rb",
-    "lib/generators/USAGE",
-    "lib/generators/rail_q/templates/rail_q_migration.rb",
-    "lib/generators/rail_q/templates/rail_q_model.rb"
-  ]
+  s.files = `git ls-files`.split("\n")
   s.add_dependency("activerecord")
 end
