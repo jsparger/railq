@@ -8,6 +8,6 @@ class <%= @queue_class_name %> < ActiveRecord::Base
   end
   
   def get_item
-    return <%= class_name %>
+    return self.<%= class_name %>
   end
 end
