@@ -12,10 +12,11 @@ module RailQ
     end
   
     def pop
-      item = self.first!
-      item.with_lock do
-        item.destroy
+      entry = self.first!
+      entry.with_lock do
+        entry.destroy
       end
+      item = entry.get_item
     end
   end
   
